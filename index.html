@@ -1,0 +1,105 @@
+<DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <style>
+            .nav {
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+        }
+            .nav a {
+                text-decoration: none;
+                color: black;
+                padding: 15px;
+                
+            }
+            
+            .items{
+                display: flex;
+                gap: 10px;
+                padding-left: 0;
+            }
+
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: courier;
+                font-size: 25;
+            }
+
+            .content {
+                display: flex;
+                align-items: center;
+                justify-self: center;
+                flex-direction: column;
+                font-size: 30;
+                color: rgb(65, 63, 63);
+            }
+            
+            .details {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .btn {
+                background-color: deeppink;
+                color: white;
+                padding: 15px 15px;
+                border: none;
+                border-radius: 5px;
+                font-size: 20;
+            }
+
+            .image1, .image2 {
+                position: absolute;
+            }
+
+            .image1 {
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+
+            .image2{
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+    </style>
+            <nav class="nav">
+                <ul class="items">
+                    <a href="">Renters</a>
+                    <a href="">Home</a>
+                    <a href="">Car</a>
+                    <a href="">Pet</a>
+                    <a href="">Life</a>
+                    <a href="">Giveback</a>
+                </ul>
+
+        <a href=""> My account</a>
+         </nav>
+
+         <header class="header">
+            <h1>Lemonade</h1>
+         </header>
+
+         <main class="content">
+            <div>
+                <h1>Forget everything you <br>know about insurance</h1>
+                <p>Instant everything. Incredible prices. Big heart.</p>
+            </div>
+            <button class="btn">
+                <b>CHECK OUR PRICES</b>
+            </button>
+         </main>
+
+         <img src="image1.png" alt="" class="image1">
+         <img src="image2.png" alt="" class="image2">
+
+
+
+</body>
