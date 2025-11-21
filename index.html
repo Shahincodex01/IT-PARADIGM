@@ -1,54 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Profile</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="profile-container">
+<DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <style>
+            .nav {
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+        }
+            .nav a {
+                text-decoration: none;
+                color: black;
+                padding: 15px;
+                
+            }
+            
+            .items{
+                display: flex;
+                gap: 10px;
+                padding-left: 0;
+            }
 
-        <header class="profile-header">
-            <div class="cover-photo-container">
-                <img src="https://tse4.mm.bing.net/th/id/OIP.LhxJai6SSuqnWQ9UKtlL6QHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Cover Photo" class="cover-photo">
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: courier;
+                font-size: 25;
+            }
+
+            .content {
+                display: flex;
+                align-items: center;
+                justify-self: center;
+                flex-direction: column;
+                font-size: 30;
+                color: rgb(65, 63, 63);
+            }
+            
+            .details {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .btn {
+                background-color: deeppink;
+                color: white;
+                padding: 15px 15px;
+                border: none;
+                border-radius: 5px;
+                font-size: 20;
+            }
+
+            .image1, .image2 {
+                position: absolute;
+            }
+
+            .image1 {
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+
+            .image2{
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+    </style>
+            <nav class="nav">
+                <ul class="items">
+                    <a href="">Renters</a>
+                    <a href="">Home</a>
+                    <a href="">Car</a>
+                    <a href="">Pet</a>
+                    <a href="">Life</a>
+                    <a href="">Giveback</a>
+                </ul>
+
+        <a href=""> My account</a>
+         </nav>
+
+         <header class="header">
+            <h1>Lemonade</h1>
+         </header>
+
+         <main class="content">
+            <div>
+                <h1>Forget everything you <br>know about insurance</h1>
+                <p>Instant everything. Incredible prices. Big heart.</p>
             </div>
-            <div class="profile-picture-container">
-                <img src="https://scontent.fmnl33-3.fna.fbcdn.net/v/t39.30808-6/515005381_2452523918444149_4896106678869236231_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEv86PBjvFpOi9Cx1_P-T-8rltHMBRvUVauW0cwFG9RVnqpTRKbzMCSKQqcL_4e_Qb8QjFIg2rNvDTkjpbyXT9s&_nc_ohc=QT4KmBr2xpAQ7kNvwEeaw_b&_nc_oc=AdmtDMX8XuwRq3FLcUGpejLEVEYF_yJEa0b12LdlkSBEB9EDUnuXHpJlcGBFUDYaEtw&_nc_zt=23&_nc_ht=scontent.fmnl33-3.fna&_nc_gid=DIJRl7CWlgMmsSfrvJEgPQ&oh=00_AfYiZ_vFEGYr7jYzjk2jIRqgeuhp7-Liz2dOqr-sS49Acg&oe=68D3391C" alt="Profile Picture" class="profile-picture">
-            </div>
-        </header>
+            <button class="btn">
+                <b>CHECK OUR PRICES</b>
+            </button>
+         </main>
 
-<div class="profile-header-info">
-    <div class="info-content-wrapper">
-        <div class="profile-info-container">
-            <h1 class="profile-name">&nbsp;Shahin De Guzman</h1>
-            <p class="followers-following shaded-text">&nbsp;&nbsp;2.8K followers • 232 following</p>
-            <p class="profile-bio">&nbsp;&nbsp;BioTest123.</p>
-        </div>
-        <hr>
-        <nav class="profile-nav">
-            <ul class="nav-list">
-                <li><a class="nav-link active">Posts</a></li>
-                <li><a class="nav-link">About</a></li>
-                <li><a class="nav-link">Reels</a></li>
-                <li><a class="nav-link">Photos</a></li>
-                <li><a class="nav-link">Videos</a></li>
-                <li><a class="nav-link">Groups</a></li>
-                <li><a class="nav-link">More ▼</a></li>
-            </ul>
-        </nav>
-    </div>
-</div>
+         <img src="image1.png" alt="" class="image1">
+         <img src="image2.png" alt="" class="image2">
 
-        <main class="profile-content">
-            <div class="timeline-container">
-                <div class="left-column">
-                    </div>
-                 <div class="right-column">
-                    </div>
-                </div>
-        </main>
-        
-    </div>
+
+
 </body>
-</html>
